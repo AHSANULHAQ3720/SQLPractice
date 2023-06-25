@@ -1,0 +1,1 @@
+Select ID , Name ,SubString(Email,0,Len(SUBSTRING(Email,0,CHARINDEX('@',Email))) / 2 + 1) + Replicate('*',CHARINDEX('@',Email) / 2) + SUBSTRING(Email,CHARINDEX('@',Email),Len(Email))   from tbo_person
